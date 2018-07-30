@@ -1,0 +1,67 @@
+<configuration>
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+	<value>32768</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+	<value>2500</value>
+  </property>
+  <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>32768</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>10.138.0.4:8032</value>
+  </property>
+  
+  <property>
+   <name>yarn.resourcemanager.webapp.address</name>
+   <value>10.138.0.4:8088</value>
+  </property>
+  
+  <property>
+   <name>yarn.resourcemanager.admin.address</name>
+   <value>10.138.0.4:8033</value>
+  </property> 
+
+  <property>
+  	<name>yarn.resourcemanager.scheduler.address</name>
+  	<value>10.138.0.4:8030</value>
+  </property>
+  <property>
+  	<name>yarn.resourcemanager.resource-tracker.address</name>
+  	<value>10.138.0.4:8031</value>
+  </property>
+  
+  <property>
+    <name>yarn.web-proxy.address</name>
+    <value>10.138.0.4</value>
+  </property>
+      
+  <property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>10.138.0.4</value>
+  </property>
+  <property>
+  	<name>yarn.nodemanager.vmem-pmem-ratio</name>
+  	<value>2.1</value>
+  </property>
+  <property>
+  	<name>yarn.application.classpath</name>
+  	<value>/etc/hadoop/conf:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop/lib/*:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop/.//*:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop-hdfs/./:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop-hdfs/lib/*:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop-hdfs/.//*:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop-yarn/lib/*:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop-yarn/.//*:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop-mapreduce/lib/*:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop-mapreduce/.//*:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop-yarn/.//*:/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop/libexec/../../hadoop-yarn/lib/*</value>
+  </property>
+
+  <property>
+    <name>yarn.log.server.url</name>
+    <value>http://10.138.0.4:19888/jobhistory/logs</value>
+  </property>
+  
+  <property>
+    <name>yarn.log-aggregation-enable</name>
+    <value>true</value>
+  </property>
+  
+  
+</configuration>

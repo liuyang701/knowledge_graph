@@ -1,0 +1,88 @@
+<configuration>
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+  <property>
+	<name>mapreduce.map.memory.mb</name>
+	<value>2500</value>
+  </property>
+  <property>
+	<name>mapreduce.reduce.memory.mb</name>
+	<value>2500</value>
+  </property>
+  <property>
+  	<name>mapreduce.map.java.opts</name>
+	<value>-Xmx2000m</value>
+  </property>
+  <property>
+  	<name>mapreduce.reduce.java.opts</name>
+	<value>-Xmx2000m</value>
+  </property>
+  <property>
+	<name>yarn.app.mapreduce.am.resource.mb</name>
+	<value>5000</value>
+  </property>
+  <property>
+	<name>yarn.app.mapreduce.am.command-opts</name>
+	<value>-Xmx4000m</value>
+  </property>
+  <property>
+  	<name>mapreduce.task.userlog.limit.kb</name>
+  	<!--<value>64</value>-->
+  	<value>0</value>
+  	<description>The maximum size of user-logs of each task in KB. 0 disables the cap.</description>
+  </property>
+  <property>
+  	<name>mapreduce.reduce.shuffle.input.buffer.percent</name>
+  	<value>0.2</value>
+  </property>
+  <property>
+  	<name>mapreduce.reduce.shuffle.merge.percent</name>
+  	<value>0.9</value>
+  </property>
+  <property>
+  	<name>mapreduce.map.output.compress</name>
+  	<value>true</value>
+  </property>
+  
+  
+  <property>
+  	<name>yarn.app.mapreduce.am.staging-dir</name>
+  	<value>/tmp/hadoop-yarn/staging</value>
+  </property>
+  
+  <property>
+  	<name>mapreduce.jobhistory.intermediate-done-dir</name>
+  	<value>${yarn.app.mapreduce.am.staging-dir}/history/done_intermediate</value>
+  </property>
+  
+  
+  <property>
+  	<name>mapreduce.jobhistory.done-dir</name>
+  	<value>${yarn.app.mapreduce.am.staging-dir}/history/done</value>
+  </property>
+  
+  
+  
+  <property>
+    <name>mapred.task.timeout</name>
+    <value>1800000</value>
+  </property>
+  
+  <property>
+  	<name>mapred.tasktracker.expiry.interval</name>
+  	<value>1800000</value>
+  </property>
+  
+  <property> 
+	<name>mapreduce.jobhistory.address</name>
+	<value>10.138.0.4:10020</value>
+  </property>
+  
+  <property> 
+	<name>mapreduce.jobhistory.webapp.address</name>
+	<value>10.138.0.4:19888</value>
+  </property>
+  
+</configuration>
